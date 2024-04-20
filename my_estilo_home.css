@@ -1,0 +1,56 @@
+body
+{
+    background-color: red;
+    background-image: url('IMG/fondo_index.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#cabecera
+{
+    background-color: aqua;
+    border: 1px solid green;
+    width: 100%;
+    height: auto;
+}
+#bloque1
+{
+    margin: auto;
+    float: left;
+    width: 50%;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#bloque1 h1
+{
+    
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blueviolet;
+}
+
+#bloque2
+{
+    float: left;
+    width: 25%;
+    height: auto;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #2fd523;
+}
+
+#bloque3
+{
+    float: left;
+    width: 25%;
+    height: auto;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #b0c62179;
+}
