@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".......my_estilo_home.css">
+    <link rel="stylesheet" href="my_estilo_home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Generador query</title>
 
@@ -12,53 +12,60 @@
     <!-- como dato este bootstrap forma columnas o bloques enteros, hay que darles un largo para que reconosca
     el espacio que va autilizar.
 ejemplo: la clase " col"-->
-    <div class="container-fluid">
-        <div class="row"> <!--fila 1-->
+    <div class="container-fluid" id="contenedor-body">
+        <div class="row"> <!--fila principal-->
             <!-- Caja izquierda que toma la mitad del ancho en pantallas pequeñas y un tercio en medianas y grandes -->
-            <div class="col-1 col-md-3" style="background-color: lightblue;border: 2px black solid;">
+            <div class="col-12 col-md-3" style="background-color: #095652;" id="caja-iz">
                 
+                    <div class="row col-12"> <!--fila 1 -->
+                        <div class="col-12"><img style="margin: 0%; padding-top: 0%; visibility: hidden; " src="IMG/logo.png" alt=""></div>
+                        
+                        <div class="col-12">
+                            <div style="margin: 0; padding: 0; height: 100px;">
+                                <h2 style="margin-left: 10%;  margin-top: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                 color: #F5F5F5;">Ingrese sus datos</h2></div>
+                        </div>
 
-                <div class="col-1 col-md-1" style="background-color: lightblue;"> <!-- EN ESTA PARTE GENERO 1 BLOQUE INVISBLE ARRIBA QUE ME PERMITE DEJAR EL SIGUIENTE BLOQUE AL MEDIO-->
-                    <br><br><br><br><br><br>
-                    
-                </div>
+                    </div> <!--fin fila 1-->
+              
 
-                <div class="col-1 col-md-1" style="background-color: lightblue;">
- 
-                    <br>
-                    <br>
-                    <br>
-                    <div class="container">
-                        <h2>Credenciales</h2><br>
-                        <form action="......dddd.df" method="post" >
-                            <H3><input type="text" name="username" placeholder="  Usuario" required  style=" border: 1px black solid;  border-radius: 20px;"></H3>
-                            <H3><input type="password" name="password" placeholder="  Contraseña" required  style=" border: 1px black solid; margin-top: 9px; border-radius: 20px;"></H3>
-                            <H4><input type="submit" style="margin-top: 10px; background-color: rgb(110, 216, 110); border:0.5px solid; border-radius: 6px; padding-top: 10px; padding-bottom:10px;padding-left: 10px; padding-right: 10px;" value="INGRESAR"></H4>
+            
+                    <div class="row col-12"> <!--fila 2-->
+
+                    <div class="col-12">
+                 
+                        <form action="......dddd.df" method="post"  id="formulario1">
+                            <input type="text" name="username" placeholder="  Usuario" required class="form-control mb-3" >
+                            <input type="password" name="password" placeholder="  Contraseña" required class="form-control mb-3" >
+                            <input type="submit" class="btn btn-success btn-block" 
+                             style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"value="INGRESAR">
                         </form>
                     </div>
 
-                    <br>
-                    <br>
-                    <br>
+                    </div><!--fin fila 2-->
 
-                </div>
+                    <div class="row col-12" > <!--fila 3-->
+                        <div id="ppp"><img id="logo" style="overflow: hidden;"src="IMG/a.webp" alt=""></div>
 
-                <div class="col-1 col-md-1" style="background-color: lightblue;">  <!-- EN ESTA PARTE GENERO 1 BLOQUE INVISBLE ABAJO QUE ME PERMITE DEJAR EL ANTERIOR BLOQUE AL MEDIO-->
-                    <br><br><br><br><br><br>
-                    
-                </div>
+                    </div><!--fin fila 3-->
+
+              
+
               
             </div>
+
             <!-- Caja derecha que toma la mitad del ancho en pantallas pequeñas y dos tercios en medianas y grandes -->
-            <div class="col-1 col-md-9" style="background-color: lightcoral; overflow: hidden;">
+
+            <div class="col-12 col-md-9" style="background-color: lightcoral; overflow: hidden;" id="caja-der">
                 
-                <img id="imagen"src="IMG/fondo_index.png" alt=""style="width: 100%; height:auto; position: absolute; top: 0; left: 0;">
+                <img id="imagen"src="IMG/fondo_index.png" alt="">
             </div>  
           
            
-        </div>
+        </div><!-- fin fila principal-->
        
 
     </div> <!--fin del contenedor -->
+
 </body>
 </html>

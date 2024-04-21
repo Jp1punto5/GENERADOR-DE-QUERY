@@ -1,56 +1,77 @@
-body
-{
-    background-color: red;
-    background-image: url('IMG/fondo_index.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    height: 100vh; /* Establece la altura del cuerpo al 100% del viewport height */
 }
 
+  
+#contenedor-body {
+    margin: 0; /* Elimina el margen predeterminado del cuerpo y del contenedor */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo y del contenedor */  
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+  }
+  #caja-iz {
+    background-color: #00008B;
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+  }
+  #caja-der {
+    
+    background-color: lightcoral;
+    overflow: hidden;
+    position: relative; /* Necesario para posicionar elementos relativos a esta caja */
+  }
 
-#cabecera
-{
-    background-color: aqua;
-    border: 1px solid green;
+  #logo
+  {
+    max-width: 100%; /* La imagen no será más grande que el contenedor */
+    max-height: 100%; /* La imagen no será más alta que el contenedor */
+    width: auto; /* La imagen mantendrá su relación de aspecto */
+    height: auto; /* La imagen mantendrá su relación de aspecto */
+    position: absolute; /* Posicionamos absolutamente la imagen dentro del contenedor */
+    top: 50%; /* La mitad del alto del contenedor */
+    left: 50%; /* La mitad del ancho del contenedor */
+    transform: translate(-50%, -50%); /* Centramos la imagen */
+   
+  }
+
+  #ppp
+  {
+ 
+    height: 33vh;
+    
+  }
+  #imagen {
     width: 100%;
     height: auto;
-}
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Para que la imagen de fondo esté detrás del contenido */
+  }
+
 #bloque1
 {
-    margin: auto;
-    float: left;
-    width: 50%;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 5px;
-}
-
-#bloque1 h1
-{
-    
-    font-size: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: blueviolet;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    width: 1200px;
+    border: 1px solid red;
 }
 
 #bloque2
 {
-    float: left;
-    width: 25%;
-    height: auto;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 5px;
-    color: #2fd523;
+    
+    top: 0px;
+    left:0px;
+    width: 100px;
+    border: 1px solid red;
 }
 
 #bloque3
 {
-    float: left;
-    width: 25%;
-    height: auto;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 5px;
-    color: #b0c62179;
+   
+    top: 0px;
+    left:0px;
+    width: 100px;
+    border: 1px solid red;
 }
