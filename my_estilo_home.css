@@ -36,9 +36,21 @@ body {
 
   #ppp
   {
- 
-    height: 33vh;
+   /* border: 1px solid black; */ 
+    width: 90%;
+    margin-left: 5%;
+    height: 36.5vh;
+    overflow: hidden;
     
+  }
+  #pro
+  {
+    border: black;
+  }
+
+  #pro:hover
+  {
+    border: 3px solid yellow;
   }
   #imagen {
     width: 100%;

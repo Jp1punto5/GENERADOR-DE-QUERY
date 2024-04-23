@@ -18,28 +18,48 @@ ejemplo: la clase " col"-->
             <div class="col-12 col-md-3" style="background-color: #095652;" id="caja-iz">
                 
                     <div class="row col-12"> <!--fila 1 -->
-                        <div class="col-12"><img style="margin: 0%; padding-top: 0%; visibility: hidden; " src="IMG/logo.png" alt=""></div>
+                      <!-- aqui estamos usando un mini logo con enlace directo al mismo home xd-->
+                        <nav class="navbar bg-body-tertiary">
+                                <div class="container-fluid">
+                                <a class="navbar-brand" style="color:#F5F5F5;"  href="home.html">
+                                    <img src="IMG/a.webp" alt="Logo" width="40" height="30"  class="d-inline-block align-text-top">
+                                    TuQueryATuMano.COM 
+                                </a>
+                                </div>
+                          </nav>
+
+
+                        <div class="col-12" id="ppp" style="height: 150px;">
+                            <img id="logo"  src="IMG/sqlcode.jpg" alt="">
+                        </div>
                         
                         <div class="col-12">
-                            <div style="margin: 0; padding: 0; height: 100px;">
-                                <h2 style="margin-left: 10%;  margin-top: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            <div style="margin: 0; padding: 0; height: 50px;">
+                                <h2 style=" margin-left: 10%;  margin-top: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                                  color: #F5F5F5;">Ingrese sus datos</h2></div>
                         </div>
 
                     </div> <!--fin fila 1-->
               
-
-            
                     <div class="row col-12"> <!--fila 2-->
 
                     <div class="col-12">
                  
-                        <form action="......dddd.df" method="post"  id="formulario1">
-                            <input type="text" name="username" placeholder="  Usuario" required class="form-control mb-3" >
-                            <input type="password" name="password" placeholder="  Contraseña" required class="form-control mb-3" >
+                        <form action="fffff.ff" method="post"  id="formulario1" onsubmit="return ingresar()">
+
+                            <input type="text" id="pro" name="user" placeholder="Usuario" 
+                            style="border-radius: 14px; width: 80%; margin-left: 10%; padding-left: 10%;" 
+                            required class="form-control mb-3" >
+                            <input type="password" id="pro" name="pass" placeholder="Contraseña" 
+                            style="border-radius: 14px; width: 90%; margin-left: 5%;padding-left: 5%;" 
+                            required class="form-control mb-3" >
                             <input type="submit" class="btn btn-success btn-block" 
-                             style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"value="INGRESAR">
+                             style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                             width: 60%; border-radius: 16px; margin-left: 20%;"
+                             value="INGRESAR">
+
                         </form>
+                      
                     </div>
 
                     </div><!--fin fila 2-->
@@ -49,7 +69,8 @@ ejemplo: la clase " col"-->
 
                     </div><!--fin fila 3-->
 
-              
+                  
+            
 
               
             </div>
@@ -67,5 +88,39 @@ ejemplo: la clase " col"-->
 
     </div> <!--fin del contenedor -->
 
+    <script>
+        var admin = "jp1punto5"; // variable global
+        var contra = 123456;
+        function ingresar()
+        {
+                //let usu = document.getElementsByName("user")[0].value; // de esta manera puedo almacenar lo ingresado por teclado, mediante el NAME del INPUT
+                //let pass = document.getElementsByName("pass")[0].value;
+                let usu = document.getElementById("pro").value;
+               
+                let validar = 0;
+                if (!usu.trim())
+                {
+                    validar = 1;
+                   // alert("ingrese datos en el campo usuario");
+                   // event.preventDefault();   
+                } 
+             
+
+                if(validar == 1)
+                {
+                    console.log(admin); // esta parte no ocurre
+                    alert(admin+ "  el usuario supremo");  // esta parte si esta ocurriendo ajja 
+                    alert("no se aceptan campos vacios..."); // esto igual ocurre
+                    pass = "poto parado"; // tampoco ocurre 
+                    document.getElementsById("pro").innerText = "el usuario puso de contrasenia lo siguiente jaja : " + pass; // menos ocurre
+                   
+                    return false;                  
+                }
+              
+
+               
+        }
+
+    </script>
 </body>
 </html>
