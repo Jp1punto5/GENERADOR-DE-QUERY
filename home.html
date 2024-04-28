@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="my_estilo_home.css">
+    <link rel="stylesheet" href="CSS/my_estilo_home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Generador query</title>
 
 </head>
 <body>
+   
     <!-- como dato este bootstrap forma columnas o bloques enteros, hay que darles un largo para que reconosca
     el espacio que va autilizar.
 ejemplo: la clase " col"-->
@@ -30,7 +31,7 @@ ejemplo: la clase " col"-->
 
 
                         <div class="col-12" id="ppp" style="height: 150px;">
-                            <img id="logo"  src="IMG/sqlcode.jpg" alt="">
+                            <img id="logo" style="border-radius: 30px;" src="IMG/sqlcode.jpg" alt="">
                         </div>
                         
                         <div class="col-12">
@@ -41,26 +42,26 @@ ejemplo: la clase " col"-->
 
                     </div> <!--fin fila 1-->
               
-                    <div class="row col-12"> <!--fila 2-->
+                    <div class="row" > <!--fila 2-->
 
-                    <div class="col-12">
-                 
-                        <form action="fffff.ff" method="post"  id="formulario1" onsubmit="return ingresar()">
+                        <div class="col-12" id="cont-form">
+                    
+                            <form action="menu.html" method="post"  id="formulario1" onsubmit="return validar(this)">
 
-                            <input type="text" id="pro" name="user" placeholder="Usuario" 
-                            style="border-radius: 14px; width: 80%; margin-left: 10%; padding-left: 10%;" 
-                            required class="form-control mb-3" >
-                            <input type="password" id="pro" name="pass" placeholder="Contraseña" 
-                            style="border-radius: 14px; width: 90%; margin-left: 5%;padding-left: 5%;" 
-                            required class="form-control mb-3" >
-                            <input type="submit" class="btn btn-success btn-block" 
-                             style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                             width: 60%; border-radius: 16px; margin-left: 20%;"
-                             value="INGRESAR">
+                                <input type="text" class="pro" id="user"  placeholder="Usuario" 
+                                style="border-radius: 14px;  margin-left: 15%; padding-left: 5%;" 
+                                >
+                                <input type="password" class="pro" id="pass"  placeholder="Contraseña" 
+                                style="border-radius: 14px;  margin-left: 15%;padding-left: 5%;" 
+                                >
+                                <input type="submit" id="boton_enviar" class="btn btn-success btn-block" 
+                                style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                width: 60%; border-radius: 16px; margin-left: 20%; margin-top: 10px;"
+                                value="INGRESAR">
 
-                        </form>
-                      
-                    </div>
+                            </form>
+                        
+                        </div>
 
                     </div><!--fin fila 2-->
 
@@ -87,40 +88,6 @@ ejemplo: la clase " col"-->
        
 
     </div> <!--fin del contenedor -->
-
-    <script>
-        var admin = "jp1punto5"; // variable global
-        var contra = 123456;
-        function ingresar()
-        {
-                //let usu = document.getElementsByName("user")[0].value; // de esta manera puedo almacenar lo ingresado por teclado, mediante el NAME del INPUT
-                //let pass = document.getElementsByName("pass")[0].value;
-                let usu = document.getElementById("pro").value;
-               
-                let validar = 0;
-                if (!usu.trim())
-                {
-                    validar = 1;
-                   // alert("ingrese datos en el campo usuario");
-                   // event.preventDefault();   
-                } 
-             
-
-                if(validar == 1)
-                {
-                    console.log(admin); // esta parte no ocurre
-                    alert(admin+ "  el usuario supremo");  // esta parte si esta ocurriendo ajja 
-                    alert("no se aceptan campos vacios..."); // esto igual ocurre
-                    pass = "poto parado"; // tampoco ocurre 
-                    document.getElementsById("pro").innerText = "el usuario puso de contrasenia lo siguiente jaja : " + pass; // menos ocurre
-                   
-                    return false;                  
-                }
-              
-
-               
-        }
-
-    </script>
+    <script src="SCRIPT/principal.js"></script> <!-- AQUI SE EJECUTAN TODAS LAS FUNCIONES QUE TENGO EN MI JAVASCRIPT-->
 </body>
 </html>

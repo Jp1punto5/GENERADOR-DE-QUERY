@@ -43,14 +43,37 @@ body {
     overflow: hidden;
     
   }
-  #pro
+
+  #cont-form
   {
-    border: black;
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 150px;
   }
 
-  #pro:hover
+  #formulario1
   {
-    border: 3px solid yellow;
+    /* border: 1px solid black; */
+     margin-top: 2%;
+     height: 120px;
+    
+  }
+
+
+  .pro
+  {
+    border: black;
+    margin-top: 9px;
+    width: 70%;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+  }
+
+  .pro:hover
+  {
+    border: 1.5px solid yellow;
   }
   #imagen {
     width: 100%;

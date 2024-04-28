@@ -1,0 +1,96 @@
+body
+{
+    margin:  0px;
+    padding: 0px;
+    
+}
+
+#contenedor-completo
+{
+    width: 100%;
+    height: 100%; /*en esta parte del estilo declaro por default que este contenedor ocupara todo el ancho y largo de la pantalla
+    por lo que abajo en las siguientes etiquetas o bloques no es necesario definir este largo, excepto en los que estaran dentro de otros
+    contenedores*/
+    background-color: red;
+    
+}
+
+#volverHome
+{
+    float: right;
+    border: 1px solid;
+    height: 100px;
+
+    padding: 0px;
+    margin-top: 10px;
+}
+
+#aa
+{
+    color:rgb(227, 126, 67);
+    margin-top: 14px;
+    border: 1px rgb(172, 115, 115);
+    border-radius: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    background-color: rgb(13, 55, 92);
+}
+#aa:hover
+{
+    color: black;
+    border: 1px yellow;
+    border-radius: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: blueviolet;
+}
+
+#fila-nav
+{
+    border: 1px solid black;
+    background-color: green;
+    width: 100%;
+    height: 20%;
+    margin: 0px;
+    padding:0px;
+}
+
+#fila-col
+{
+    border: 1px solid black;
+    background-color: blue;
+    height: 100px;
+    margin-left: 8%;  
+    margin-top: 25px;
+}
+
+#cuerpo2
+{
+    width: 100%;
+    height: 80%;
+    margin: 0px;
+    padding:0px;
+}
+
+
+#cuerpo-imagen  
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+    overflow: hidden;
+    position: fixed;
+    margin: 0px;
+    padding:0px;
+    z-index: 1;
+    
+}
+
+
+
