@@ -1,9 +1,6 @@
-
-// AQUI COMIENZAN LAS FUNCIONES // 
-
 var admin = "jp1punto5"; // variable global
 var contra = "123456";
-
+//AQUI COMIENZAN LAS VALIDACIONES
 function validar(boton_enviar)
 
 {
@@ -51,3 +48,4 @@ function validar(boton_enviar)
 
 }// fin funcion de validar campos y enviar el boton devuelta al formulario
 
+//FIN DE LAS FUNCIONES QUE VALIDAN

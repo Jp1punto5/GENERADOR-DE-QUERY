@@ -7,18 +7,15 @@
     <link rel="stylesheet" href="CSS/my_estilo_home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Generador query</title>
-
 </head>
-<body>
-   
+<body>   
     <!-- como dato este bootstrap forma columnas o bloques enteros, hay que darles un largo para que reconosca
     el espacio que va autilizar.
 ejemplo: la clase " col"-->
     <div class="container-fluid" id="contenedor-body">
         <div class="row"> <!--fila principal-->
             <!-- Caja izquierda que toma la mitad del ancho en pantallas pequeñas y un tercio en medianas y grandes -->
-            <div class="col" style="background-color: #095652;" id="caja-iz">
-                
+            <div class="col" style="background-color: #095652;" id="caja-iz">               
                     <div class="row col-12"> <!--fila 1 -->
                       <!-- aqui estamos usando un mini logo con enlace directo al mismo home xd-->
                         <nav class="navbar bg-body-tertiary">
@@ -29,64 +26,41 @@ ejemplo: la clase " col"-->
                                 </a>
                                 </div>
                           </nav>
-
                         <div class="col-12" id="ppp" style="height: 150px;">
                             <img id="logo" style="border-radius: 30px;" src="IMG/sqlcode.jpg" alt="">
-                        </div>
-                        
+                        </div>                       
                         <div class="col-12">
                             <div style="margin: 0; padding: 0; height: 50px;">
                                 <h2 style=" margin-left: 10%;  margin-top: 20px;
                                  color: #F5F5F5;">Ingrese sus datos</h2>
                             </div>
                         </div>
-
-                    </div> <!--fin fila 1-->
-              
+                    </div> <!--fin fila 1-->              
                     <div class="row" > <!--fila 2-->
-
-                        <div id="cont-form">
-                    
+                        <div id="cont-form">                   
                             <form action="menu.html" method="post"  id="formulario1" onsubmit="return validar(this)">
-
                                 <input type="text" class="pro" id="user"  placeholder="Usuario" 
                                 style="border-radius: 14px;  margin-left: 15%; padding-left: 5%;" 
-                                >
+                                ><!--fin input usuario-->
                                 <input type="password" class="pro" id="pass"  placeholder="Contraseña" 
                                 style="border-radius: 14px;  margin-left: 15%;padding-left: 5%;" 
-                                >
+                                ><!--fin input clave-->
                                 <input type="submit" id="boton_enviar" class="btn btn-success btn-block" 
                                 style="width: 60%; border-radius: 16px; margin-left: 20%; margin-top: 10px;"
                                 value="INGRESAR">
-
-                            </form>
-                        
+                            </form>                       
                         </div>
-
                     </div><!--fin fila 2-->
-
                     <div class="row col-12" > <!--fila 3-->
                             <div class="imagen"></div>     <!--aqui tengo la imagen abajo del formulario-->                                       
-                    </div><!--fin fila 3-->
-
-                  
-            
-
-              
+                    </div><!--fin fila 3-->            
             </div>
-
             <!-- Caja derecha que toma la mitad del ancho en pantallas pequeñas y dos tercios en medianas y grandes -->
-
             <div class="col-9" style="background-color: lightcoral;" id="caja-der">
-  
-            </div>  
-          
-           
+            </div>          
         </div><!-- fin fila principal-->
-       
-
     </div> <!--fin del contenedor -->
-    <script src="SCRIPT/principal.js"></script> <!-- AQUI SE EJECUTAN TODAS LAS FUNCIONES QUE TENGO EN MI JAVASCRIPT-->
+    <script src="SCRIPT/validaciones.js"></script> <!-- AQUI SE EJECUTAN TODAS LAS FUNCIONES QUE TENGO EN MI JAVASCRIPT-->
       <!-- ALGUNAS LLAVES DE COMENTARIO PARA COPIAR Y PEGAR AQUI ABAJO-->
     <!---->
     <!---->

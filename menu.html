@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CSS/estilo_menu.css">
     <link rel="stylesheet" href="CSS/my_estilo_home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.4/xlsx.full.min.js"></script> <!--ESTA PARTE ES IMPORTANTE-->
     <title>Inicio</title>
 </head>
 <body>
@@ -18,10 +19,10 @@
 
                 <div class="col-10" id="fila-col">
                     
-                    <div  class="button__reporte"><button>Reporte Insertar</button></div>
-                    <div  class="button__reporte"><button>Crear Tabla temporal</button></div>
-                    <div  class="button__reporte"><button>Tabla Validar Datos</button></div>
-                    <div  class="button__reporte"><button>Recorrer Vin</button></div>
+                    <div  class="button__reporte" ><button id="btn__reporte_ins">Reporte Insertar</button></div>
+                    <div  class="button__reporte" ><button id="btn__crear_tabla">Crear Tabla temporal</button></div>
+                    <div  class="button__reporte" ><button id="btn__validar_datos">Tabla Validar Datos</button></div>
+                    <div  class="button__reporte" ><button id="btn__recorrer_vin">Recorrer Vin</button></div>
                     
 
                 </div>
@@ -39,16 +40,18 @@
             <div class="container-xxl">
               <div id="cuerpo-imagen" >
 
-                <main>
+                <main id="ocultar__todo"><!--aqui vamos a manipular lo que vendria siendo la ventana que nos permitira solicitar lo que se quiere hacer-->
                     <div class="caja__trasera">
                         <!--INICIO DE PROCESO DE ARCHIVO-->
                         <div class="caja__trasera-subir-archivo">
-                                <h4> <input type="file" id="primer__ar" accept=".xlsx,.xls"></h4>
-                                <p>Vamos a procesar el archivo que ingreso y transformarlo en una Query de SQL</p>
-                                <button id="cambiar__btn" onclick="procesarPrimerExcel()">Generar</button>
+                                <h3 id="h3__cambiar" ></h3>
+                                <input type="file" id="primer__ar" accept=".xlsx,.xls">
+                                    <button id="btn__subir-archivo" >Subir archivo</button>
+                                <p id="p__completar"></p>
+                                <button id="cambiar__btn">Generar</button>
                         </div> <!-- FIN DEL PROCESO-->
                     </div> <!-- FIN CAJA TRASERA -->
-                </main>
+                </main><!-- fin de dicha manipulacion en el main-->
               </div>
             
             </div>
@@ -58,7 +61,8 @@
 
     </div> <!-- FIN CONTENEDOR DE TODO-->
     <!--AQUI COMIENZA EL SCRIPT-->
-    <script src=""></script>
+    <script src="SCRIPT/manipular_excel.js"></script>
+    <script src="SCRIPT/mostrar_form.js"></script>
     <!-- FIN DEL SCRIPT-->
 </body>
   <!-- ALGUNAS LLAVES DE COMENTARIO PARA COPIAR Y PEGAR AQUI ABAJO-->
