@@ -1,16 +1,17 @@
-body
-{
-    margin:  0px;
-    padding: 0px;
-    
-}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; /*Esta propiedad CSS se utiliza para quitar cualquier decoración de texto predeterminada, como subrayado, tachado o resaltado.*/
+    font-family: sans-serif;
+  }
 
 #contenedor-completo
 {
     width: 100%;
-    height: 100%; /*en esta parte del estilo declaro por default que este contenedor ocupara todo el ancho y largo de la pantalla
-    por lo que abajo en las siguientes etiquetas o bloques no es necesario definir este largo, excepto en los que estaran dentro de otros
-    contenedores*/
+    height: auto;
+    margin: auto;
+    position: relative;
     background-color: red;
     
 }
@@ -20,7 +21,6 @@ body
     float: right;
     border: 1px solid;
     height: 100px;
-
     padding: 0px;
     margin-top: 10px;
 }
@@ -31,22 +31,16 @@ body
     margin-top: 14px;
     border: 1px rgb(172, 115, 115);
     border-radius: 12px;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 3px;
-    padding-top: 3px;
+    padding: 4px 4px;
     background-color: rgb(13, 55, 92);
+    transition: all 500ms;
 }
 #aa:hover
 {
     color: black;
     border: 1px yellow;
     border-radius: 12px;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px 4px;
     background-color: blueviolet;
 }
 
@@ -67,30 +61,123 @@ body
     height: 100px;
     margin-left: 8%;  
     margin-top: 25px;
+    backdrop-filter: blur(100px);
 }
 
-#cuerpo2
-{
-    width: 100%;
-    height: 80%;
-    margin: 0px;
-    padding:0px;
+/*AQUI VAMOS A MOLDEAR EL BOTON*/
+
+.button__reporte button{
+
+    width: 20%;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px 20px;
+    margin: 20px 30px;
+    float: left; 
+    background: rgb(228, 179, 18);  
+    font-weight: 400;
+    font-size: 20px;
+    transition: all 500ms;
+    border-radius: 8px;
+    color: black;
+    cursor: pointer;
 }
+
+.button__reporte button:hover{
+    background: #03E7BF;
+    padding: 20px 30px;
+    margin: 30px 40px;
+    font-size: 23px;
+}
+
+/*aqui comienza lo que modelara el cuerpo de abajo*/
+
 
 
 #cuerpo-imagen  
 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 1px solid black;
-    overflow: hidden;
-    position: fixed;
-    margin: 0px;
-    padding:0px;
-    z-index: 1;
+    height: 605px;
+    background-image: url(../IMG/fondo_index.png);
+    background-size: cover; /*de esta manera el tamanio de la imagen se adapta*/
+    background-repeat: no-repeat; /* esto es para que la imagen no se repita */
+    background-position: center; /* con esto centramos la imagen*/
+    background-attachment: fixed;
+    display: flex;
     
 }
 
 
+main
+{
+    width: 40%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#primer__ar{
+    background-color: red;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex; /* esto produce el movimiento de otro contenedor que se encuentre dentro de esta clase*/
+    justify-content: center; /* esto logra centrar el contenido */
+    backdrop-filter: blur(10px); /* esto da el efecto de censura*/
+    background-color: rgba(0,128,255,0.5);
+    border-radius: 150px 6px 200px 60px;
+}
+
+
+.caja__trasera div
+{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms; /* esto nos permite observar cambios al tener movimientos*/
+}
+
+
+.caja__trasera div p,
+.caja__trasera div button{
+
+     margin-top: 30px;
+}
+
+.caja__trasera div p{
+    font-size: 20px;
+}
+
+.caja__trasera h4 {
+
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.caja__trasera button{
+
+    padding: 10px 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 20px;
+    margin-left: 30px;
+    font-weight: 600; /*para que se entienda esto no son pixeles */
+    cursor: pointer; /* esto transforma el cursor del mouse en una manito */
+    color: white;
+    outline: none;
+    transition: all 300ms; /* esto lo que hace es relentizar el cambio de colores del fondo */
+    border-radius: 12px;
+}
+
+
+.caja__trasera button:hover{
+    background-color: white;
+
+    padding: 20px 50px;
+    color: #46A2fd;
+}
+
+
+
+/*fin del cuerpo de abajo*/
 

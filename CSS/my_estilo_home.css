@@ -1,32 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; /*Esta propiedad CSS se utiliza para quitar cualquier decoración de texto predeterminada, como subrayado, tachado o resaltado.*/
+  font-family: sans-serif;
+}
 body {
-    margin: 0; /* Elimina el margen predeterminado del cuerpo */
-    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
-    height: 100vh; /* Establece la altura del cuerpo al 100% del viewport height */
+
 }
 
   
 #contenedor-body {
-    margin: 0; /* Elimina el margen predeterminado del cuerpo y del contenedor */
-    padding: 0; /* Elimina el relleno predeterminado del cuerpo y del contenedor */  
-    height: 100vh; /* Ocupa toda la altura de la ventana */
+    width: 100%;
+    max-width: 2000px;
+    height: auto;
+    margin: auto;
+    position: relative;
   }
   #caja-iz {
     background-color: #00008B;
-    padding: 20px; /* Ajusta el relleno según sea necesario */
-  }
-  #caja-der {
-    
-    background-color: lightcoral;
-    overflow: hidden;
-    position: relative; /* Necesario para posicionar elementos relativos a esta caja */
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
   }
 
   #logo
   {
-    max-width: 100%; /* La imagen no será más grande que el contenedor */
-    max-height: 100%; /* La imagen no será más alta que el contenedor */
-    width: auto; /* La imagen mantendrá su relación de aspecto */
-    height: auto; /* La imagen mantendrá su relación de aspecto */
+    max-width: 300px; /* La imagen no será más grande que el contenedor */
+    max-height: 200px; /* La imagen no será más alta que el contenedor */
+    width: 100%; /* La imagen mantendrá su relación de aspecto */
+    height: 100%; /* La imagen mantendrá su relación de aspecto */
     position: absolute; /* Posicionamos absolutamente la imagen dentro del contenedor */
     top: 50%; /* La mitad del alto del contenedor */
     left: 50%; /* La mitad del ancho del contenedor */
@@ -39,9 +42,7 @@ body {
    /* border: 1px solid black; */ 
     width: 90%;
     margin-left: 5%;
-    height: 36.5vh;
-    overflow: hidden;
-    
+    height: 300px; 
   }
 
   #cont-form
@@ -68,45 +69,51 @@ body {
     margin-top: 9px;
     width: 70%;
     font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    outline: none;
   }
 
   .pro:hover
   {
-    border: 1.5px solid yellow;
+    padding:4px;
+    border: 2px solid yellow;
   }
-  #imagen {
+
+  #boton_enviar{
+    transition: all 400ms;
+    padding: 13px 20px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #boton_enviar:hover{
+    font-weight: 400;
+    font-size: 20px;
+    background: #7FFF00;
+    color: black;
+    padding: 20px 30px;
+  }
+
+  .imagen{
+    margin-top:35px;
+    background-image: url(../IMG/a.webp);
     width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1; /* Para que la imagen de fondo esté detrás del contenido */
+    height: 270px;
+    background-size: cover; /*de esta manera el tamanio de la imagen se adapta*/
+    background-repeat: no-repeat; /* esto es para que la imagen no se repita */
+    background-position: center; /* con esto centramos la imagen*/
+    display: flex;
   }
 
-#bloque1
-{
-    position: fixed;
-    top: 0px;
-    left:0px;
-    width: 1200px;
-    border: 1px solid red;
-}
+  /*AQUI MANIPULO LA IMAGEN DE LA CAJA DERECHA y la MISMA CAJA DE LA DERECHA*/
 
-#bloque2
-{
-    
-    top: 0px;
-    left:0px;
-    width: 100px;
-    border: 1px solid red;
-}
+  #caja-der {
+    width: 100%;    
+    background-image: url(../IMG/fondo_index.png);
+    background-size: cover; /*de esta manera el tamanio de la imagen se adapta*/
+    background-repeat: no-repeat; /* esto es para que la imagen no se repita */
+    background-position: center; /* con esto centramos la imagen*/
+   /* background-attachment: fixed;*/ /* con esto hacemos que tome tanto el ancho como el largo de la pantalla*/   
+  }
 
-#bloque3
-{
-   
-    top: 0px;
-    left:0px;
-    width: 100px;
-    border: 1px solid red;
-}
+  /*AQUI TERMINA DICHA MANIPULACIÓN*/
+

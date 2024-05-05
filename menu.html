@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/estilo_menu.css">
     <link rel="stylesheet" href="CSS/my_estilo_home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Inicio</title>
 </head>
 <body>
-    <script src=""></script>
     <div id="contenedor-completo">
 
 
-
+            <!--AQUI SE ARMA TODAS LAS OPCIONES DE LA PAGINA ARRIBA-->
             <div class="row" id="fila-nav">
 
                 <div class="col-10" id="fila-col">
                     
-
-
+                    <div  class="button__reporte"><button>Reporte Insertar</button></div>
+                    <div  class="button__reporte"><button>Crear Tabla temporal</button></div>
+                    <div  class="button__reporte"><button>Tabla Validar Datos</button></div>
+                    <div  class="button__reporte"><button>Recorrer Vin</button></div>
+                    
 
                 </div>
                 <div class="col-1" id="volverHome" > 
@@ -30,15 +33,36 @@
                     </a>
                 </div>
 
+            </div> <!--AQUI TERMINA LO QUE SE ENCUENTRA ARRIBA-->
+
+            <!-- aqui va todo lo que se encuentra abajo de las opciones de arriba-->
+            <div class="container-xxl">
+              <div id="cuerpo-imagen" >
+
+                <main>
+                    <div class="caja__trasera">
+                        <!--INICIO DE PROCESO DE ARCHIVO-->
+                        <div class="caja__trasera-subir-archivo">
+                                <h4> <input type="file" id="primer__ar" accept=".xlsx,.xls"></h4>
+                                <p>Vamos a procesar el archivo que ingreso y transformarlo en una Query de SQL</p>
+                                <button id="cambiar__btn" onclick="procesarPrimerExcel()">Generar</button>
+                        </div> <!-- FIN DEL PROCESO-->
+                    </div> <!-- FIN CAJA TRASERA -->
+                </main>
+              </div>
+            
             </div>
-
-            <div class="row" id="cuerpo2">
-              <img id="cuerpo-imagen"   src="IMG/fondo_index.png" alt="">
-            </div>
+            <!--fin del cuerpo de abajo-->
 
 
 
-
-    </div>
+    </div> <!-- FIN CONTENEDOR DE TODO-->
+    <!--AQUI COMIENZA EL SCRIPT-->
+    <script src=""></script>
+    <!-- FIN DEL SCRIPT-->
 </body>
+  <!-- ALGUNAS LLAVES DE COMENTARIO PARA COPIAR Y PEGAR AQUI ABAJO-->
+    <!---->
+    <!---->
+    <!---->
 </html>

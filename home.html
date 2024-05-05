@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="IMG/icon.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/my_estilo_home.css">
@@ -16,7 +17,7 @@ ejemplo: la clase " col"-->
     <div class="container-fluid" id="contenedor-body">
         <div class="row"> <!--fila principal-->
             <!-- Caja izquierda que toma la mitad del ancho en pantallas pequeñas y un tercio en medianas y grandes -->
-            <div class="col-12 col-md-3" style="background-color: #095652;" id="caja-iz">
+            <div class="col" style="background-color: #095652;" id="caja-iz">
                 
                     <div class="row col-12"> <!--fila 1 -->
                       <!-- aqui estamos usando un mini logo con enlace directo al mismo home xd-->
@@ -29,22 +30,22 @@ ejemplo: la clase " col"-->
                                 </div>
                           </nav>
 
-
                         <div class="col-12" id="ppp" style="height: 150px;">
                             <img id="logo" style="border-radius: 30px;" src="IMG/sqlcode.jpg" alt="">
                         </div>
                         
                         <div class="col-12">
                             <div style="margin: 0; padding: 0; height: 50px;">
-                                <h2 style=" margin-left: 10%;  margin-top: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                                 color: #F5F5F5;">Ingrese sus datos</h2></div>
+                                <h2 style=" margin-left: 10%;  margin-top: 20px;
+                                 color: #F5F5F5;">Ingrese sus datos</h2>
+                            </div>
                         </div>
 
                     </div> <!--fin fila 1-->
               
                     <div class="row" > <!--fila 2-->
 
-                        <div class="col-12" id="cont-form">
+                        <div id="cont-form">
                     
                             <form action="menu.html" method="post"  id="formulario1" onsubmit="return validar(this)">
 
@@ -55,8 +56,7 @@ ejemplo: la clase " col"-->
                                 style="border-radius: 14px;  margin-left: 15%;padding-left: 5%;" 
                                 >
                                 <input type="submit" id="boton_enviar" class="btn btn-success btn-block" 
-                                style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                                width: 60%; border-radius: 16px; margin-left: 20%; margin-top: 10px;"
+                                style="width: 60%; border-radius: 16px; margin-left: 20%; margin-top: 10px;"
                                 value="INGRESAR">
 
                             </form>
@@ -66,8 +66,7 @@ ejemplo: la clase " col"-->
                     </div><!--fin fila 2-->
 
                     <div class="row col-12" > <!--fila 3-->
-                        <div id="ppp"><img id="logo" style="overflow: hidden;"src="IMG/a.webp" alt=""></div>
-
+                            <div class="imagen"></div>     <!--aqui tengo la imagen abajo del formulario-->                                       
                     </div><!--fin fila 3-->
 
                   
@@ -78,9 +77,8 @@ ejemplo: la clase " col"-->
 
             <!-- Caja derecha que toma la mitad del ancho en pantallas pequeñas y dos tercios en medianas y grandes -->
 
-            <div class="col-12 col-md-9" style="background-color: lightcoral; overflow: hidden;" id="caja-der">
-                
-                <img id="imagen"src="IMG/fondo_index.png" alt="">
+            <div class="col-9" style="background-color: lightcoral;" id="caja-der">
+  
             </div>  
           
            
@@ -89,5 +87,9 @@ ejemplo: la clase " col"-->
 
     </div> <!--fin del contenedor -->
     <script src="SCRIPT/principal.js"></script> <!-- AQUI SE EJECUTAN TODAS LAS FUNCIONES QUE TENGO EN MI JAVASCRIPT-->
+      <!-- ALGUNAS LLAVES DE COMENTARIO PARA COPIAR Y PEGAR AQUI ABAJO-->
+    <!---->
+    <!---->
+    <!---->
 </body>
 </html>
