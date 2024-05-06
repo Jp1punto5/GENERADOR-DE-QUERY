@@ -5,14 +5,9 @@
   text-decoration: none; /*Esta propiedad CSS se utiliza para quitar cualquier decoración de texto predeterminada, como subrayado, tachado o resaltado.*/
   font-family: sans-serif;
 }
-body {
-
-}
-
   
 #contenedor-body {
     width: 100%;
-    max-width: 2000px;
     height: auto;
     margin: auto;
     position: relative;
@@ -97,7 +92,7 @@ body {
     margin-top:35px;
     background-image: url(../IMG/a.webp);
     width: 100%;
-    height: 270px;
+    height: 450px;
     background-size: cover; /*de esta manera el tamanio de la imagen se adapta*/
     background-repeat: no-repeat; /* esto es para que la imagen no se repita */
     background-position: center; /* con esto centramos la imagen*/
@@ -117,3 +112,8 @@ body {
 
   /*AQUI TERMINA DICHA MANIPULACIÓN*/
 
+@media screen and (max-width: 1400px){
+  .imagen{
+    height: 270px;
+  }
+}

@@ -6,20 +6,31 @@
     font-family: sans-serif;
   }
 
+  body 
+  {
+      
+      background-image: url(../IMG/fondo_index.png);
+      background-size: cover; /*de esta manera el tamanio de la imagen se adapta*/
+      background-repeat: no-repeat; /* esto es para que la imagen no se repita */
+      background-position: center; /* con esto centramos la imagen*/
+      background-attachment: fixed;
+      display: flex;
+      
+  }
+
 #contenedor-completo
 {
     width: 100%;
     height: auto;
     margin: auto;
     position: relative;
-    background-color: red;
+    
     
 }
 
 #volverHome
 {
     float: right;
-    border: 1px solid;
     height: 100px;
     padding: 0px;
     margin-top: 10px;
@@ -27,12 +38,12 @@
 
 #aa
 {
-    color:rgb(227, 126, 67);
+    color:#F8F8FF;
     margin-top: 14px;
     border: 1px rgb(172, 115, 115);
     border-radius: 12px;
     padding: 4px 4px;
-    background-color: rgb(13, 55, 92);
+    background-color: #DAA520;
     transition: all 500ms;
 }
 #aa:hover
@@ -45,9 +56,7 @@
 }
 
 #fila-nav
-{
-    border: 1px solid black;
-    background-color: green;
+{  
     width: 100%;
     height: 20%;
     margin: 0px;
@@ -56,12 +65,10 @@
 
 #fila-col
 {
-    border: 1px solid black;
-    background-color: blue;
     height: 100px;
     margin-left: 8%;  
     margin-top: 25px;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(50px);
 }
 
 /*AQUI VAMOS A MOLDEAR EL BOTON*/
@@ -91,20 +98,6 @@
 }
 
 /*aqui comienza lo que modelar el cuerpo de abajo*/
-
-
-
-#cuerpo-imagen  
-{
-    height: 605px;
-    background-image: url(../IMG/fondo_index.png);
-    background-size: cover; /*de esta manera el tamanio de la imagen se adapta*/
-    background-repeat: no-repeat; /* esto es para que la imagen no se repita */
-    background-position: center; /* con esto centramos la imagen*/
-    background-attachment: fixed;
-    display: flex;
-    
-}
 
 
 main
@@ -177,9 +170,6 @@ main
     color: #46A2fd;
 }
 
-.caja__trasera-subir-archivo{
-  
-}
 
 /*fin del cuerpo de abajo*/
 
