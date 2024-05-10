@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/my_estilo_home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.4/xlsx.full.min.js"></script> <!--ESTA PARTE ES IMPORTANTE-->
     <title>Generador query</title>
 </head>
 <body>   
@@ -38,7 +39,7 @@ ejemplo: la clase " col"-->
                     </div> <!--fin fila 1-->              
                     <div class="row" > <!--fila 2-->
                         <div id="cont-form">                   
-                            <form action="menu.html" method="post"  id="formulario1" onsubmit="return validar(this)">
+                            <form action="menu.html" method="post"  id="formulario1" onsubmit="return validar(event)">
                                 <input type="text" class="pro" id="user"  placeholder="Usuario" 
                                 style="border-radius: 14px;  margin-left: 15%; padding-left: 5%;" 
                                 ><!--fin input usuario-->

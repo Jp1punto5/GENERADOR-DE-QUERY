@@ -37,7 +37,7 @@ function actualizarFormulario(estado, titulo, cuerpo)
 btn_reporte.addEventListener('click', () => 
     {
         btn_generar.onclick = null;
-       estadosVisibilidad.reporte = actualizarFormulario(estadosVisibilidad.reporte,'Reporte Insertar','Se tomara el archivo seleccionado y se creara un insertar para SQL');
+       estadosVisibilidad.reporte = actualizarFormulario(estadosVisibilidad.reporte,btn_reporte.textContent,'Se tomara el archivo seleccionado y se creara un insertar para SQL');
        btn_generar.onclick = procesarPrimerExcel;
     }); // fin del primer boton de reporte
 
@@ -45,8 +45,8 @@ btn_reporte.addEventListener('click', () =>
 btn_crear_tabla.addEventListener('click', () => 
     {
         btn_generar.onclick = null;
-        estadosVisibilidad.crearTabla = actualizarFormulario(estadosVisibilidad.crearTabla,'Crear Tabla','Vamos a Crear Tabla desde 0 formato SQL');
-       
+        estadosVisibilidad.crearTabla = actualizarFormulario(estadosVisibilidad.crearTabla,btn_crear_tabla.textContent,'Vamos a Crear Tabla desde 0 formato SQL');
+        btn_generar.onclick = procesarSegundoExcel;
     }) // fin del segundo boton
 
 //boton 3
