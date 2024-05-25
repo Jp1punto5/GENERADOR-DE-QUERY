@@ -54,14 +54,14 @@ btn_crear_tabla.addEventListener('click', () =>
 btn_validar_tabla.addEventListener('click', () => 
     {
         btn_generar.onclick = null;
-        estadosVisibilidad.validarTabla = actualizarFormulario(estadosVisibilidad.validarTabla,'Tabla Temporal Para Validar Datos','aqui se genera un archivo donde podremos validar datos');
-        btn_generar.onclick = procesarPrimerExcel3;
+        estadosVisibilidad.validarTabla = actualizarFormulario(estadosVisibilidad.validarTabla,btn_validar_tabla.textContent,'aqui se genera un archivo donde podremos validar datos');
+        btn_generar.onclick = procesarTercerExcel;
     })// fin del tercer boton
 //boton 4
 
 btn_recorrer_vin.addEventListener('click', () => 
     {
         btn_generar.onclick = null;
-        estadosVisibilidad.recorrerVin = actualizarFormulario(estadosVisibilidad.recorrerVin,'Recorrer Vin','Ingresar Archivo Excel con el que vamos a validar en base de datos');
-        btn_generar.onclick = procesarPrimerExcel4;
+        estadosVisibilidad.recorrerVin = actualizarFormulario(estadosVisibilidad.recorrerVin,btn_recorrer_vin.textContent,'Ingresar Archivo Excel con el que vamos a validar en base de datos');
+        btn_generar.onclick = procesarCuartoExcel;
     }) // fin del cuarto boton
