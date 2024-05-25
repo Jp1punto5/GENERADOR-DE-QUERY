@@ -1,6 +1,7 @@
 
 const form_validar = document.getElementById("formulario1");
-
+const mostrar_exito = document.getElementById("mostrar_ingreso");
+const btn_acceder = document.getElementById("btn__login");
 
 
 form_validar.addEventListener('submit',(e) => {
@@ -35,10 +36,15 @@ form_validar.addEventListener('submit',(e) => {
       usuario = usuario.substring(0,3) + 'rtfg'+usuario.substring(3);
       password = password.substring(0,3) +'erty'+password.substring(3);
       if (validar2(usuario,password)) {
-        window.location.href = 'menu.html';
+        mostrar_exito.style.visibility = 'visible';
+        btn_acceder.addEventListener('click',() => {
+          window.location.href = 'menu.html';
+        });
       }else
       {
         alert('Usuario o contraseña incorrectos. ');
+        form_validar.user.value = '';
+        form_validar.pass.value = '';
       }
      }
 

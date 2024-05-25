@@ -117,3 +117,28 @@
     height: 270px;
   }
 }
+
+
+#mostrar_ingreso{
+ visibility: hidden;
+}
+.logeo{
+  float: right;
+  margin-top: 20%;
+  margin-right: 36%;
+  width: 500px;
+  height: 220px;
+  border: 1px solid black;
+  border-radius: 12px;
+  background: rgb(117, 224, 151);
+  padding: 20px 60px;
+}
+
+.logeo button{
+  padding: 15px 15px;
+  outline: none;
+  border-radius: 12px;
+  background:#6f6fe1;
+  margin-left: 20%;
+}
+
